@@ -63,6 +63,13 @@ export default {
         backdrop-filter: blur(8.3px);
         -webkit-backdrop-filter: blur(8.3px);
         border: 1px solid rgba(0, 0, 0, 0.3);
+        transition: 0.8s;
+    }
+
+    .box:hover {
+        background: rgb(0 0 0 / 90%);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.7);
     }
 
     h4 {

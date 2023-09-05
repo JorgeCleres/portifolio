@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="fundo-color">
     <Capa />
     <About />
     <Experiencia />
@@ -65,8 +65,10 @@ export default {
   html {
     scroll-behavior: smooth;
   }
+
+  body,
   .fundo-color {
-    background: #101112;
+    background: #000000;
   }
 
   .modal-footer {
