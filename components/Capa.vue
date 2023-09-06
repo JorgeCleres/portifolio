@@ -11,12 +11,17 @@
             top = '0px'
             right = '35rem'
         />
-        <Satelite
+        <!-- <Satelite
             size = '3rem'
             top = '43rem'
             right = '2rem'
+        /> -->
+        <Astronauta 
+            size = '8rem'
+            right = '2rem'
+            top = '23rem'
         />
-        <img id="terra" src="../static/terra.png" alt="" />
+        <img id="terra" src="../static/terra2.png" alt="" />
     </div>
     <h1 class="text-center floating-font pt-20">Hello</h1>
     <h1 class="text-center floating-font-variant">I am Jorge</h1>
@@ -40,10 +45,11 @@
 import LineVertical from '@/components/elements/LineVertical.vue'
 import Satelite from './elements/Satelite.vue';
 import Start from './elements/Start.vue';
+import Astronauta from './elements/Astronauta.vue';
 
 export default {
   name: "Capa",
-  components: { LineVertical, Satelite, Start }
+  components: { LineVertical, Satelite, Start, Astronauta }
 };
 </script>
 
@@ -73,11 +79,14 @@ export default {
         right: 9rem;
         width: 740px;
         overflow: hidden;
+        top: 12vw;
     }
 
     #terra {
         margin: 0 auto;
         display: flex;
+        width: 31vw;
+        opacity: 0.8;
     }
 
     @-moz-keyframes spin {

@@ -42,6 +42,7 @@
     />
     <Logos />
     <System />
+    <Footer />
   </div>
   
 </template>
@@ -54,10 +55,11 @@ import Portifolio from '../components/Portifolio.vue';
 import Carrousel from '../components/elements/Carrousel.vue';
 import Logos from '../components/Logos.vue';
 import System from '../components/System.vue';
+import Footer from '../components/Footer.vue';
 
 export default {
     name: 'IndexPage',
-    components: { Capa, About, Experiencia, Portifolio, Carrousel, Logos, System }
+    components: { Capa, About, Experiencia, Portifolio, Carrousel, Logos, System, Footer }
 }
 </script>
 

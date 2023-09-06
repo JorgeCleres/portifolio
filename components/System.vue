@@ -53,7 +53,7 @@ export default {
       
   <style scoped>
 .system {
-  height: 40vw;
+  height: 46vw;
 }
 
 .image-system {
@@ -72,12 +72,12 @@ export default {
   opacity: 1;
 }
 #fundo {
-  top: 211rem;
+  top: 187rem;
   position: absolute;
-  width: 92rem;
+  width: 107rem;
   opacity: 0.6;
-  right: 39vw;
-  animation: spin-ffabc5ac 228s infinite linear;
+  right: 25vw;
+  transform: rotate(-9deg);
 }
 
 p {
@@ -131,29 +131,23 @@ h5 {
 }
 
 .box {
-  background: rgb(0 0 0 / 36%);
+  background: rgb(0 0 0 / 66%);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.3px);
   -webkit-backdrop-filter: blur(8.3px);
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid rgb(237 237 237 / 30%);
   transition: 0.8s;
   cursor: pointer;
 }
 .box:hover {
   background: rgb(0 0 0 / 90%);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.7);
+  border: 1px solid rgb(237 237 237 / 30%);
 }
 
 .gradient-text {
-    background-image: linear-gradient(95deg, #008add, #00b9f9, #bb0467, #cd0090);
-    background-size: 100%;
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+    color: #a5a5a5 !important;
 }
 
 </style>

@@ -29,6 +29,7 @@ export default {
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
       Noto Sans, sans-serif;
     font-weight: 500;
+    z-index: 100;
   }
 
   h5 {
@@ -41,12 +42,12 @@ export default {
     transition: 0.4s;
     width: 20%;
     filter: grayscale(1);
+    z-index: 100;
   }
 
   img:hover {
     filter: grayscale(0);
   }
-
   .floating { 
         animation-name: floating;
         animation-duration: 3s;

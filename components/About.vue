@@ -1,6 +1,6 @@
 <template>
   <div id="about" class="about fundo-color xl:px-60 sm:px-0">
-    <img src="../static/lua.png" alt="">
+    <img src="../static/lua2.png" alt="">
     <h1 class="text-center mb-10">About me</h1>
     <div class="box rounded-2xl mx-auto py-10 px-10">
         <h4 class="text-center gradient-text">Lorem ipsum dolor sit amet,</h4>
@@ -30,11 +30,12 @@ export default {
         font-weight: 500;
     }
     img {
-        top: 70rem;
+        top: 53rem;
         position: absolute;
-        width: 32rem;
-        opacity: 0.4;
+        width: 46rem;
+        opacity: 0.9;
         animation: spin-ffabc5ac 228s infinite linear;
+        left: 1vw;
     }
 
     @-moz-keyframes spin {
