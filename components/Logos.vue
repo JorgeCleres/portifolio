@@ -1,8 +1,8 @@
 <template>
-  <div class="logos fundo-color xl:px-60 sm:px-0 pb-40">
+  <div class="logos fundo-color xl:px-60 sm:px-10 pb-40">
     <h5 class="m-0 pt-20">Portfolio</h5>
     <h2 class="m-0 p-0">Logos</h2>
-    <div class="flex justify-between">
+    <div class="flex justify-between flex-wrap">
       <img class="floating" src="@/static/logos/ludmila.png" alt="ludmila">
       <img class="floating-variant" src="@/static/logos/plusom.png" alt="plusom">
       <img class="floating" src="@/static/logos/ternos.png" alt="ternos ivan zamir">
@@ -29,6 +29,7 @@ export default {
     font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
       Noto Sans, sans-serif;
     font-weight: 500;
+    position: relative;
     z-index: 100;
   }
 
@@ -68,5 +69,11 @@ export default {
         animation-duration: 4s;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
+    }
+
+    @media(max-width:769px) {
+      img {
+        width: 40%;
+      }
     }
 </style>

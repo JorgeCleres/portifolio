@@ -85,7 +85,7 @@ export default {
     #terra {
         margin: 0 auto;
         display: flex;
-        width: 31vw;
+        width: 99vw;
         opacity: 0.8;
     }
 
@@ -202,4 +202,20 @@ export default {
         animation-timing-function: ease-in-out;
     }
 
+    @media(max-width:769px) {
+        #terra {
+            width: 99vw;
+        }
+
+        .orbita {
+            right: 18rem;
+            top: 21vw;
+        }
+    }
+
+    @media(max-width: 590px) {
+        .capa h1 {
+            font-size: 4.3rem;
+        }
+    }
 </style>

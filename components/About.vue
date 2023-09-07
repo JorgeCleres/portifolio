@@ -1,5 +1,5 @@
 <template>
-  <div id="about" class="about fundo-color xl:px-60 sm:px-0">
+  <div id="about" class="about fundo-color xl:px-60 lg:px-20 sm:px-5">
     <img src="../static/lua2.png" alt="">
     <h1 class="text-center mb-10">About me</h1>
     <div class="box rounded-2xl mx-auto py-10 px-10">
@@ -92,5 +92,17 @@ export default {
         color: #f3f3f3;
         font-size: 19px;
         font-family: system-ui;
+    }
+
+    @media(max-width:769px) {
+        .box {
+            background: rgba(0, 0, 0, 0.3);
+            width: 100%;
+            border: 1px solid #333333;
+        }
+        img {
+            width: 34rem;
+            left: -16vw;
+        }
     }
 </style>

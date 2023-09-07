@@ -1,5 +1,5 @@
 <template>
-  <div class="system fundo-color xl:px-60 sm:px-0">
+  <div class="system fundo-color xl:px-60 sm:px-10">
     <!-- <img id="fundo" src="../static/sol.png" alt="" /> -->
     <img id="fundo" src="../static/buraconegro.gif" alt="" />
     <h5 class="m-0 p-0">Portfolio</h5>
@@ -8,8 +8,8 @@
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
       sollicitudin metus metus, at viverra nisl vehi.
     </p>
-    <div class="flex text grid-rows-2 grid-flow-col">
-      <div class="w-2/5">
+    <div class="xl:flex text grid-rows-2 grid-flow-col sm:grid">
+      <div class="w-2/5 sm:w-full">
         <div class="box mt-0 p-2" @click="setSystem('maisdoc.jpg')">
           <h4 class="gradient-text">MaisDoc</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sollicitudin metus metus, at viverra nisl vehicula non.</p>
@@ -23,7 +23,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sollicitudin metus metus, at viverra nisl vehicula non.</p>
         </div>
       </div>
-      <div class="w-3/5 mx-10">
+      <div class="w-3/5 sm:w-full mx-10 sm:mx-0 sm:my-10">
         <div class="image-system mt-0">
           <img :src="require(`@/static/${image}`)" alt="">
         </div>
@@ -53,11 +53,11 @@ export default {
       
   <style scoped>
 .system {
-  height: 46vw;
+  min-height: 46vw;
 }
 
 .image-system {
-  height: 21vw;
+  min-height: 21vw;
   position: absolute;
 }
 
@@ -149,5 +149,20 @@ h5 {
 .gradient-text {
     color: #a5a5a5 !important;
 }
+
+    @media(max-width: 768px) {
+      #fundo {
+        top: 225rem;
+        width: 46rem;
+        right: 12vw;
+        transform: rotate(-9deg);
+      }
+      p {
+        width: 100%;
+      }
+      .image-system img {
+        width: 95%;
+      }
+    }
 
 </style>

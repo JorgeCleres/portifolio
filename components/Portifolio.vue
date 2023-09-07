@@ -1,5 +1,5 @@
 <template>
-  <div class="about fundo-color xl:px-60 sm:px-0">
+  <div class="about fundo-color xl:px-60 sm:px-10">
     <h5 class="m-0 p-0">Portfolio</h5>
     <h2 class="m-0 pb-6">Sites</h2>
   </div>

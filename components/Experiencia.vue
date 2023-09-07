@@ -1,7 +1,7 @@
 <template>
-  <div class="about fundo-color xl:px-60 sm:px-0">
-    <div class="grid grid-cols-2">
-        <div class="px-10">
+  <div class="experiencia fundo-color xl:px-60 sm:px-0">
+    <div class="grid xl:grid-cols-2 sm:grid-cols-1">
+        <div class="px-10 py-20">
             <h1 class="mb-2">
                 Experiência ipsum dolor sit
             </h1>
@@ -182,5 +182,13 @@ export default {
         animation-duration: 4s;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
+    }
+
+    @media(max-width:769px) {
+        .box {
+            background: rgba(0, 0, 0, 0.3);
+            width: 100%;
+            border: 1px solid #333333;
+        }
     }
 </style>

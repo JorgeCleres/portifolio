@@ -1,7 +1,8 @@
 <template>
-  <div id="footer" class="footer fundo-color xl:px-60 sm:px-0">
+  <div id="footer" class="footer fundo-color xl:px-60 sm:px-0 pt-20">
+    <div class="box sm:p-10 sm:m-10">
     <h2 class="text-center mb-20 p-0">Contact me</h2>
-    <div class="flex justify-between">
+      <div class="flex justify-between">
       <a href="https://www.instagram.com/jorge.cleres/">
         <img class="floating" src="@/static/logos/instagram.png" alt="instagram">
       </a>
@@ -18,6 +19,7 @@
         <img class="floating" src="@/static/logos/telegram.png" alt="telegram" />
       </a>
     </div>
+    </div>
   </div>
 </template>
   
@@ -30,7 +32,7 @@ export default {
   <style scoped>
 .footer {
   background-image: url(/_nuxt/static/sun-7.gif);
-  height: 23vw;
+  min-height: 30vw;
   z-index: 1000;
   position: relative;
   background-size: cover;
@@ -90,4 +92,21 @@ img:hover {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
+
+    .box {
+        position: relative;
+        background: rgba(0, 0, 0, 0.36);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8.3px);
+        -webkit-backdrop-filter: blur(8.3px);
+        border: 1px solid #333333;
+    }
+
+
+    @media(max-width: 769px) {
+      img {
+        width: 50px;
+      }
+    }
 </style>

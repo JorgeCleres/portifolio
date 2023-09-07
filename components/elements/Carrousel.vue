@@ -88,9 +88,9 @@ img {
 }
 
 .carousel {
-  width: 104%;
+  width: 103%;
   overflow: hidden;
-  margin: 0 -76px;
+  margin: 0px -3vw;
 }
 
 .inner {
@@ -111,4 +111,17 @@ img {
 .card:hover img {
   opacity: 1;
 }
+
+@media(max-width: 1280px) {
+  .carousel {
+    width: 109vw !important;
+  }
+}
+
+@media (max-width: 769px) {
+  .carousel {
+      width: 103vw !important;
+  }
+}
+
 </style>
