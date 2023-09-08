@@ -1,7 +1,7 @@
 <template>
-  <div id="about" class="about fundo-color xl:px-60 lg:px-20 sm:px-5">
+  <div id="about" class="about fundo-color 2xl:px-60 xl:px-20 lg-10 sm:px-10">
     <img src="../static/lua2.png" alt="">
-    <h1 class="text-center mb-10">About me</h1>
+    <h2 class="text-center mb-10">About me</h2>
     <div class="box rounded-2xl mx-auto py-10 px-10">
         <h4 class="text-center gradient-text">Lorem ipsum dolor sit amet,</h4>
         <p class="text-center">Oi! Eu sou o Goku Jorge Willian tenho 28 anos por enquanto, recém casado agora nem tão recém assim, natural da belíssima cidade de Pinhais, mas atualmente morando em Curitiba Pinhais > Curitiba. Um grande apreciador de churras, cerveja e metido a Gamer nas horas vagas o que raramente acontece.</p>
@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style scoped>
-    h1 {
+    h2 {
         color: rgb(243, 243, 243);
         font-size: 3rem;
         position: relative;
@@ -30,12 +30,12 @@ export default {
         font-weight: 500;
     }
     img {
-        top: 53rem;
+        top: 60rem;
         position: absolute;
-        width: 46rem;
+        width: 29rem;
         opacity: 0.9;
         animation: spin-ffabc5ac 228s infinite linear;
-        left: 1vw;
+        left: 8vw;
     }
 
     @-moz-keyframes spin {
@@ -97,12 +97,36 @@ export default {
     @media(max-width:769px) {
         .box {
             background: rgba(0, 0, 0, 0.3);
-            width: 100%;
+            width: 95%;
             border: 1px solid #333333;
         }
         img {
-            width: 34rem;
-            left: -16vw;
+            width: 22rem;
+            left: -2vw;
+            top: 70rem;
+        }
+    }
+
+    @media (max-width: 769px) {
+        img {
+            width: 17rem;
+            left: -5vw;
+            top: 70rem;
+        }
+
+        .box {
+            padding: 20px;
+        }
+    }
+    @media (max-width: 480px) {
+        h2 {
+            font-size: 2.5rem;
+        }
+        h4 {
+            font-size: 22px;
+        }
+        p {
+            font-size: 18px;
         }
     }
 </style>

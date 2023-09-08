@@ -1,7 +1,7 @@
 <template>
-  <div class="about fundo-color xl:px-60 sm:px-10">
-    <h5 class="m-0 p-0">Portfolio</h5>
-    <h2 class="m-0 pb-6">Sites</h2>
+  <div id="portfolio" class="about fundo-color xl:px-20 lg-10 sm:px-10">
+    <h5 class="m-0 px-10">Portfolio</h5>
+    <h2 class="m-0 px-10 pb-6">Sites</h2>
   </div>
 </template>
     
@@ -28,5 +28,14 @@ export default {
     color: rgb(243, 243, 243);
     font-size: 1.4rem;
     font-weight: 300;
+  }
+
+  @media(max-width:480px) {
+    h2, h5 {
+      padding-left: 10px !important;
+    }
+    h2 {
+        font-size: 3rem;
+    }
   }
 </style>

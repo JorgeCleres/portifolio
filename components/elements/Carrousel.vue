@@ -114,7 +114,7 @@ img {
 
 @media(max-width: 1280px) {
   .carousel {
-    width: 109vw !important;
+    width: 105vw !important;
   }
 }
 
@@ -122,6 +122,16 @@ img {
   .carousel {
       width: 103vw !important;
   }
+  .card {
+    width: 40vw;
+  }
 }
+@media (max-width: 480px) {
+
+  .card {
+    width: 60vw;
+  }
+}
+
 
 </style>

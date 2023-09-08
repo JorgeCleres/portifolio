@@ -1,6 +1,6 @@
 <template>
     <div>
-      <div class="menu fundo-color xl:px-60 sm:px-0">
+      <div class="menu fundo-color 2xl:px-60 xl:px-20 lg-10 sm:px-0">
         <b-navbar toggleable="lg" type="dark">
           <b-navbar-brand href="#">
             <img src="../static/logo_animated.svg" alt="">
@@ -11,11 +11,11 @@
           <b-collapse id="nav-collapse" is-nav>
             <!-- Right aligned nav items -->
             <b-navbar-nav class="ml-auto">
-              <b-nav-item href="#">Home</b-nav-item>
+              <b-nav-item href="#home">Home</b-nav-item>
               <b-nav-item href="#about">About</b-nav-item>
-              <b-nav-item href="#">Experience</b-nav-item>
-              <b-nav-item href="#">Services</b-nav-item>
-              <b-nav-item href="#">Contact</b-nav-item>
+              <b-nav-item href="#experience">Experience</b-nav-item>
+              <b-nav-item href="#portfolio">Portfolio</b-nav-item>
+              <b-nav-item href="#footer">Contact</b-nav-item>
             </b-navbar-nav>
           </b-collapse>
         </b-navbar>

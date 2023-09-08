@@ -1,7 +1,7 @@
 <template>
   <div class="logos fundo-color xl:px-60 sm:px-10 pb-40">
-    <h5 class="m-0 pt-20">Portfolio</h5>
-    <h2 class="m-0 p-0">Logos</h2>
+    <h5 class="m-0 pt-20 sm:px-10">Portfolio</h5>
+    <h2 class="m-0 sm:px-10">Logos</h2>
     <div class="flex justify-between flex-wrap">
       <img class="floating" src="@/static/logos/ludmila.png" alt="ludmila">
       <img class="floating-variant" src="@/static/logos/plusom.png" alt="plusom">
@@ -41,7 +41,7 @@ export default {
 
   img {
     transition: 0.4s;
-    width: 20%;
+    width: 18%;
     filter: grayscale(1);
     z-index: 100;
   }
@@ -72,8 +72,27 @@ export default {
     }
 
     @media(max-width:769px) {
+      .logos {
+        margin: 80px 0 0 !important;
+      }
       img {
         width: 40%;
+      }
+      h2, h5 {
+        padding: 0 20px !important;
+      }
+    }
+    @media(max-width:480px) {
+      h2 {
+        font-size: 3rem;
+      }
+    }
+    @media (max-width: 480px) {
+      h2, h5 {
+        padding: 0 10px !important;
+      }
+      img {
+        margin: 0 auto;
       }
     }
 </style>

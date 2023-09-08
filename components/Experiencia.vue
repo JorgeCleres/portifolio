@@ -1,10 +1,10 @@
 <template>
-  <div class="experiencia fundo-color xl:px-60 sm:px-0">
-    <div class="grid xl:grid-cols-2 sm:grid-cols-1">
-        <div class="px-10 py-20">
-            <h1 class="mb-2">
+  <div id="experience" class="experiencia fundo-color 2xl:px-60 xl:px-20 lg-10 sm:px-0">
+    <div class="grid xl:grid-cols-2 lg:grid-cols-2 sm:grid-cols-1">
+        <div class="exp-text px-10 py-20">
+            <h2 class="mb-2">
                 Experiência ipsum dolor sit
-            </h1>
+            </h2>
             <div class="box px-4 py-4">
             <p>
                 Oi! Eu sou o Goku Jorge Willian tenho 28 anos por enquanto, recém
@@ -117,7 +117,7 @@ export default {
   
 <style scoped>
 
-    h1 {
+    h2 {
         color: rgb(243, 243, 243);
         font-size: 3rem;
         position: relative;
@@ -189,6 +189,29 @@ export default {
             background: rgba(0, 0, 0, 0.3);
             width: 100%;
             border: 1px solid #333333;
+        }
+        .exp-text, .skills {
+            padding: 0 20px !important;
+        }
+    }
+
+    @media(max-width:769px) {
+        .skill-box {
+            display: grid;
+        }
+        .w-1\/2 {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h2 {
+            font-size: 2.5rem;
+        }
+        .px-10 {
+            padding-left: 0.5rem !important;
+            padding-right: 0.5rem !important;
         }
     }
 </style>

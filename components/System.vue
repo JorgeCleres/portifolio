@@ -1,15 +1,15 @@
 <template>
-  <div class="system fundo-color xl:px-60 sm:px-10">
+  <div class="system fundo-color 2xl:px-60 xl:px-20 lg-10 sm:px-0">
     <!-- <img id="fundo" src="../static/sol.png" alt="" /> -->
     <img id="fundo" src="../static/buraconegro.gif" alt="" />
-    <h5 class="m-0 p-0">Portfolio</h5>
-    <h2 class="m-0 pb-6">Systems</h2>
-    <p>
+    <h5 class="m-0 px-10">Portfolio</h5>
+    <h2 class="m-0 pb-6 px-10">Systems</h2>
+    <p class="px-10">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
       sollicitudin metus metus, at viverra nisl vehi.
     </p>
-    <div class="xl:flex text grid-rows-2 grid-flow-col sm:grid">
-      <div class="w-2/5 sm:w-full">
+    <div class="xl:flex text grid-rows-2 grid-flow-col sm:grid px-10">
+      <div class="box-of-boxes">
         <div class="box mt-0 p-2" @click="setSystem('maisdoc.jpg')">
           <h4 class="gradient-text">MaisDoc</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sollicitudin metus metus, at viverra nisl vehicula non.</p>
@@ -23,7 +23,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sollicitudin metus metus, at viverra nisl vehicula non.</p>
         </div>
       </div>
-      <div class="w-3/5 sm:w-full mx-10 sm:mx-0 sm:my-10">
+      <div class="box-image">
         <div class="image-system mt-0">
           <img :src="require(`@/static/${image}`)" alt="">
         </div>
@@ -53,23 +53,20 @@ export default {
       
   <style scoped>
 .system {
-  min-height: 46vw;
+  min-height: 37vw;
 }
 
 .image-system {
   min-height: 21vw;
-  position: absolute;
 }
 
 .image-system img {
-  width: 100%;
-  height: inherit;
-  border-radius: 10px;
-  opacity: 0.7;
-  transition: 0.4s;
-}
-.image-system img:hover {
-  opacity: 1;
+    width: 100%;
+    min-height: 21.5vw;
+    border-radius: 10px;
+    opacity: 0.9;
+    transition: 0.4s;
+    margin: 0px 20px 0;
 }
 #fundo {
   top: 187rem;
@@ -150,6 +147,24 @@ h5 {
     color: #a5a5a5 !important;
 }
 
+    @media(max-width:1280px){
+      .image-system img {
+          margin: 0;
+      }
+      .box-image {
+        margin: -6vw 0;
+      }
+    }
+
+    @media(max-width:1200px) {
+      p {
+          width: 100%;
+      }
+      .box-image {
+        margin: 1rem 0;
+      }
+    }
+
     @media(max-width: 768px) {
       #fundo {
         top: 225rem;
@@ -157,12 +172,32 @@ h5 {
         right: 12vw;
         transform: rotate(-9deg);
       }
-      p {
+      .image-system img {
         width: 100%;
       }
-      .image-system img {
-        width: 95%;
+    }
+
+    @media(max-width:480px) {
+      h2 {
+        font-size: 2.5rem;
+      }
+      p {
+        width: 100%;
+        font-size: 19px;
+      }
+      .px-10 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .text p {
+        font-size: 16px;
+      }
+      .text h4 {
+        color: rgb(243, 243, 243);
+        font-size: 19px;
       }
     }
+
+
 
 </style>

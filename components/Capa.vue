@@ -1,5 +1,5 @@
 <template>
-  <div class="capa fundo-color xl:px-60 sm:px-0">
+  <div id="home" class="capa fundo-color x2xl:px-60 xl:px-20 lg-10 sm:px-0 sm:px-0">
     <div class="orbita">
         <Satelite 
             size = '4rem'
@@ -7,19 +7,14 @@
             right = '1rem'
         />
         <Satelite
-            size = '7rem'
+            size = '5rem'
             top = '0px'
             right = '35rem'
         />
-        <!-- <Satelite
-            size = '3rem'
-            top = '43rem'
-            right = '2rem'
-        /> -->
         <Astronauta 
             size = '8rem'
             right = '2rem'
-            top = '23rem'
+            top = '32rem'
         />
         <img id="terra" src="../static/terra2.png" alt="" />
     </div>
@@ -31,7 +26,7 @@
     <button
       class="rounded-lg border-gradient floating flex m-auto px-10 py-15"
     >
-      <a class="fundo-color" href="">Get in touch</a>
+      <a class="fundo-color" href="#footer">Get in touch</a>
     </button>
 
     <LineVertical 
@@ -76,7 +71,7 @@ export default {
         opacity: 0.9;
         overflow: auto;
         animation: spin-ffabc5ac 118s infinite linear;
-        right: 9rem;
+        right: 11rem;
         width: 740px;
         overflow: hidden;
         top: 12vw;
@@ -204,18 +199,40 @@ export default {
 
     @media(max-width:769px) {
         #terra {
-            width: 99vw;
+            width: 65vw;
         }
 
         .orbita {
-            right: 18rem;
-            top: 21vw;
+            right: 6rem;
+            top: 23vw;
+        }
+        .capa h1 {
+            font-size: 5.3rem;
         }
     }
 
     @media(max-width: 590px) {
         .capa h1 {
             font-size: 4.3rem;
+        }
+    }
+
+    @media(max-width:480px) {
+        #terra {
+            width: 100vw;
+        }
+
+        .orbita {
+            right: 6rem;
+            top: 93vw;
+            width: 390px;
+        }
+
+        .capa h1 {
+            font-size: 3.3rem;
+        }
+        .capa {
+            height: 39rem;
         }
     }
 </style>

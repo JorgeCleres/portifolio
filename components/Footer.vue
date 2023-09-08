@@ -1,5 +1,5 @@
 <template>
-  <div id="footer" class="footer fundo-color xl:px-60 sm:px-0 pt-20">
+  <div id="footer" class="footer fundo-color 2xl:px-60 xl:px-20 lg-10 sm:px-0 pt-20">
     <div class="box sm:p-10 sm:m-10">
     <h2 class="text-center mb-20 p-0">Contact me</h2>
       <div class="flex justify-between">
@@ -107,6 +107,36 @@ img:hover {
     @media(max-width: 769px) {
       img {
         width: 50px;
+      }
+
+      .footer {
+        min-height: 60vw;
+        padding: 80px 35px;
+      }
+      .box {
+        padding: 25px 40px;
+      }
+      h2 {
+        margin-bottom: 35px;
+      }
+    }
+
+    @media(max-width: 480px) {
+      h2 {
+        font-size: 2rem;
+      }
+      .box {
+        padding: 20px 10px;
+      }
+      .floating {
+        margin-left: 0px;
+        margin-top: 0px;
+      }
+      img {
+        width: 33px;
+      }
+      .footer {
+          padding: 80px 10px;
       }
     }
 </style>
