@@ -1,10 +1,11 @@
 <template>
   <div id="about" class="about fundo-color 2xl:px-60 xl:px-20 lg-10 sm:px-10">
     <img src="../static/lua2.png" alt="">
-    <h2 class="text-center mb-10">About me</h2>
-    <div class="box rounded-2xl mx-auto py-10 px-10">
-        <h4 class="text-center gradient-text">Lorem ipsum dolor sit amet,</h4>
-        <p class="text-center">Oi! Eu sou o Goku Jorge Willian tenho 28 anos por enquanto, recém casado agora nem tão recém assim, natural da belíssima cidade de Pinhais, mas atualmente morando em Curitiba Pinhais > Curitiba. Um grande apreciador de churras, cerveja e metido a Gamer nas horas vagas o que raramente acontece.</p>
+    <h2 class="text-center mb-10">ABOUT ME</h2>
+    <div class="box rounded-2xl mx-auto py-3 px-10">
+        <h4 class="text-center gradient-text">Hello everyone!</h4>
+        <p class="text-center">My passion for technology led me to the world of programming. Learning to develop wasn't exactly an easy task, but with a lot of persistence, discipline, and determination, I faced this challenge head-on. It's been years of study (and I'm still studying), and over that time, I've accumulated a lot of experience in the field of development. I've had the opportunity to create various websites, systems, and even designs for logos and Instagram posts.</p>
+        <p class="text-center">My main goal is to keep learning and deepening my knowledge in this vast universe of programming. I'm constantly exploring new languages, frameworks, architectures, and cloud technologies. The journey is still long, but I approach it with a lot of enthusiasm because I chose the profession I love.</p>
     </div>
     <LineVertical 
         size = '11rem'
@@ -65,12 +66,6 @@ export default {
         -webkit-backdrop-filter: blur(8.3px);
         border: 1px solid rgba(0, 0, 0, 0.3);
         transition: 0.8s;
-    }
-
-    .box:hover {
-        background: rgb(0 0 0 / 90%);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
-        border: 1px solid rgba(0, 0, 0, 0.7);
     }
 
     h4 {

@@ -1,31 +1,19 @@
 <template>
   <div id="experience" class="experiencia fundo-color 2xl:px-60 xl:px-20 lg-10 sm:px-0">
     <div class="grid xl:grid-cols-2 lg:grid-cols-2 sm:grid-cols-1">
-        <div class="exp-text px-10 py-20">
+        <div class="exp-text px-10">
             <h2 class="mb-2">
-                Experiência ipsum dolor sit
+                MY EXPERIENCE
             </h2>
-            <div class="box px-4 py-4">
-            <p>
-                Oi! Eu sou o Goku Jorge Willian tenho 28 anos por enquanto, recém
-                casado agora nem tão recém assim, natural da belíssima cidade de
-                Pinhais, mas atualmente morando em Curitiba Pinhais > Curitiba. Um
-                grande apreciador de churras, cerveja e metido a Gamer nas horas
-                vagas o que raramente acontece.
-            </p>
+            <div class="box pr-4 py-2">
+                <p>My journey in the field of Information Technology began during my course in Analysis and Systems Development at FAPI, where I acquired a solid foundation to build my career.</p>
+                <p>My first job in this field was focused on software testing, which provided me with valuable experience in ensuring the quality of programs and online campaign websites.</p>
+                <p>However, my true passion has always been development. I decided to make the switch and fully immerse myself in the development field, working in both Front-end and Back-end roles. Currently, I am involved in a project that I have been a part of since day one, and I take great pride in that. It's incredible to be part of this process from the very beginning.</p>
+                <p>On the side, you'll find some of the technical skills I've acquired along the way, both through professional practice and personal projects. I'm eager to continue growing and making further contributions in the world of software development.</p>
             </div>
         </div>
 
         <div class="skills px-10 grid grid-cols-3">
-
-            <div class="floating skill-box flex justify-evenly flex-row px-2 py-4 mx-1 my-2">
-                <div class="w-1/2">
-                    <img src="@/static/vue.png" alt="">
-                </div>
-                <div class="w-1/2 text-center">
-                    <span class="text-center inline-block align-middle">Vue</span>
-                </div>
-            </div>
 
             <div class="floating skill-box flex justify-evenly flex-row px-2 py-4 mx-1 my-2">
                 <div class="w-1/2">
@@ -36,12 +24,21 @@
                 </div>
             </div>
 
-            <div class="floating-variant skill-box flex justify-evenly flex-row px-2 py-4 mx-1 my-2">
+            <div class="floating skill-box flex justify-evenly flex-row px-2 py-4 mx-1 my-2">
                 <div class="w-1/2">
-                    <img src="@/static/mongodb.png" alt="">
+                    <img src="@/static/vue.png" alt="">
                 </div>
                 <div class="w-1/2 text-center">
-                    <span class="text-center inline-block align-middle">MongoDB</span>
+                    <span class="text-center inline-block align-middle">Vue</span>
+                </div>
+            </div>
+
+            <div class="floating-variant skill-box flex justify-evenly flex-row px-2 py-4 mx-1 my-2">
+                <div class="w-1/2">
+                    <img src="@/static/php.png" alt="">
+                </div>
+                <div class="w-1/2 text-center">
+                    <span class="text-center inline-block align-middle">PHP</span>
                 </div>
             </div>
 
@@ -54,21 +51,39 @@
                 </div>
             </div>
 
-            <div class="floating-variant skill-box flex justify-evenly flex-row px-2 py-4 mx-1 my-2">
-                <div class="w-1/2">
-                    <img src="@/static/ts.png" alt="">
-                </div>
-                <div class="w-1/2 text-center">
-                    <span class="text-center inline-block align-middle">TS</span>
-                </div>
-            </div>
-
             <div class="floating skill-box flex justify-evenly flex-row px-2 py-4 mx-1 my-2">
                 <div class="w-1/2">
                     <img src="@/static/node.png" alt="">
                 </div>
                 <div class="w-1/2 text-center">
                     <span class="text-center inline-block align-middle">Node</span>
+                </div>
+            </div>
+            
+            <div class="floating-variant skill-box flex justify-evenly flex-row px-2 py-4 mx-1 my-2">
+                <div class="w-1/2">
+                    <img src="@/static/mongodb.png" alt="">
+                </div>
+                <div class="w-1/2 text-center">
+                    <span class="text-center inline-block align-middle">MongoDB</span>
+                </div>
+            </div>
+
+            <div class="floating-variant skill-box flex justify-evenly flex-row px-2 py-4 mx-1 my-2">
+                <div class="w-1/2">
+                    <img src="@/static/aws.png" alt="">
+                </div>
+                <div class="w-1/2 text-center">
+                    <span class="text-center inline-block align-middle">Cloud</span>
+                </div>
+            </div>
+
+            <div class="floating-variant skill-box flex justify-evenly flex-row px-2 py-4 mx-1 my-2">
+                <div class="w-1/2">
+                    <img src="@/static/ts.png" alt="">
+                </div>
+                <div class="w-1/2 text-center">
+                    <span class="text-center inline-block align-middle">TS</span>
                 </div>
             </div>
 
@@ -90,12 +105,21 @@
                 </div>
             </div>
 
-            <div class="floating-variant skill-box flex justify-evenly flex-row px-2 py-4 mx-1 my-2">
+            <div class="floating skill-box flex justify-evenly flex-row px-2 py-4 mx-1 my-2">
                 <div class="w-1/2">
-                    <img src="@/static/php.png" alt="">
+                    <img src="@/static/html.png" alt="">
                 </div>
                 <div class="w-1/2 text-center">
-                    <span class="text-center inline-block align-middle">PHP</span>
+                    <span class="text-center inline-block align-middle">HTML</span>
+                </div>
+            </div>
+
+            <div class="floating-variant skill-box flex justify-evenly flex-row px-2 py-4 mx-1 my-2">
+                <div class="w-1/2">
+                    <img src="@/static/css.png" alt="">
+                </div>
+                <div class="w-1/2 text-center">
+                    <span class="text-center inline-block align-middle">CSS</span>
                 </div>
             </div>
 

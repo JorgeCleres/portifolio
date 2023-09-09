@@ -4,23 +4,26 @@
     <img id="fundo" src="../static/buraconegro.gif" alt="" />
     <h5 class="m-0 px-10">Portfolio</h5>
     <h2 class="m-0 pb-6 px-10">Systems</h2>
-    <p class="px-10">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-      sollicitudin metus metus, at viverra nisl vehi.
-    </p>
+    <p class="px-10">Here are some of the systems I've worked on or created for my own use.</p>
     <div class="xl:flex text grid-rows-2 grid-flow-col sm:grid px-10">
       <div class="box-of-boxes">
         <div class="box mt-0 p-2" @click="setSystem('maisdoc.jpg')">
           <h4 class="gradient-text">MaisDoc</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sollicitudin metus metus, at viverra nisl vehicula non.</p>
+          <p>This is a project in which I provide programming services. The main idea of the project is to handle high-complexity operations, offering extensive, specific, and detailed document support for certificates issued by various agencies throughout the national territory.</p>
         </div>
         <div class="box mt-3 p-2" @click="setSystem('cardapio.jpg')">
-          <h4 class="gradient-text">Cardapio</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sollicitudin metus metus, at viverra nisl vehicula non.</p>
+          <h4 class="gradient-text">Menu</h4>
+          <p>I created this menu to assist my wife with the sale of vegan products. It's essentially a menu that showcases all the products and provides the option to make a purchase.</p>
+          <span>Vue</span>
+          <span>Node</span>
+          <span>MongoBd</span>
+          <span>Figma</span>
         </div>
         <div class="box mt-3 p-2" @click="setSystem('whatsapi.jpg')">
-          <h4 class="gradient-text">Criador API</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sollicitudin metus metus, at viverra nisl vehicula non.</p>
+          <h4 class="gradient-text">API creator</h4>
+          <p>I developed this API builder to make API styling easy and dynamic.</p>
+          <span>Vue</span>
+          <span>Figma</span>
         </div>
       </div>
       <div class="box-image">
@@ -82,6 +85,7 @@ p {
   color: #cfcfcf;
   font-size: 20px;
   position: relative;
+  margin-bottom: 10px;
 }
 .box p {
   width: 100%;
@@ -107,9 +111,20 @@ p {
   color: rgb(243, 243, 243);
 }
 
+.box-of-boxes {
+  width: 100%;
+}
+
 .text p {
-  font-size: 18px;
+  font-size: 17px;
   color: rgb(243, 243, 243);
+}
+
+span {
+    background: white;
+    border-radius: 10px;
+    padding: 3px 10px;
+    margin: 0 5px;
 }
 h2 {
   color: rgb(243, 243, 243);

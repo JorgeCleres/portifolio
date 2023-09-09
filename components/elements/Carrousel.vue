@@ -91,6 +91,8 @@ img {
   width: 103%;
   overflow: hidden;
   margin: 0px -3vw;
+  position: relative;
+  z-index: 100;
 }
 
 .inner {
@@ -127,7 +129,6 @@ img {
   }
 }
 @media (max-width: 480px) {
-
   .card {
     width: 60vw;
   }
