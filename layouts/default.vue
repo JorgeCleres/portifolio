@@ -3,7 +3,7 @@
       <div class="menu fundo-color 2xl:px-60 xl:px-20 lg-10 sm:px-0">
         <b-navbar toggleable="lg" type="dark">
           <b-navbar-brand href="#">
-            <img src="../static/logo_animated.svg" alt="">
+            <img src="@/static/logo_animated.svg" alt="">
           </b-navbar-brand>
   
           <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>

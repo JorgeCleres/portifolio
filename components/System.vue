@@ -1,7 +1,6 @@
 <template>
   <div class="system fundo-color 2xl:px-60 xl:px-20 lg-10 sm:px-0">
-    <!-- <img id="fundo" src="../static/sol.png" alt="" /> -->
-    <img id="fundo" src="../static/buraconegro.gif" alt="" />
+    <img id="fundo" src="@/static/buraconegro.gif" alt="" />
     <h5 class="m-0 px-10">Portfolio</h5>
     <h2 class="m-0 pb-6 px-10">Systems</h2>
     <p class="px-10">Here are some of the systems I've worked on or created for my own use.</p>

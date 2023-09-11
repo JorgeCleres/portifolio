@@ -49,7 +49,7 @@ export default {
 </script>
 
 <style scoped>
-    .capa {
+.capa {
         height: 53rem;
     }
     .capa h1 {
@@ -70,7 +70,8 @@ export default {
         position: absolute;
         opacity: 0.9;
         overflow: auto;
-        animation: spin-ffabc5ac 118s infinite linear;
+        -webkit-animation: spin-ffabc5ac 118s infinite linear;
+                animation: spin-ffabc5ac 118s infinite linear;
         right: 11rem;
         width: 740px;
         overflow: hidden;
@@ -79,15 +80,11 @@ export default {
 
     #terra {
         margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: 99vw;
         opacity: 0.8;
-    }
-
-    @-moz-keyframes spin {
-        100% {
-            -moz-transform: rotate(360deg);
-        }
     }
     @-webkit-keyframes spin {
         100% {
@@ -98,12 +95,6 @@ export default {
         100% {
             -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
-        }
-    }
-
-    @-moz-keyframes teste {
-        100% {
-            -moz-transform: rotate3d(360deg);
         }
     }
     @-webkit-keyframes teste {
@@ -119,6 +110,7 @@ export default {
     }
 
     .gradient-text {
+        background-image: -o-linear-gradient(355deg, #008add, #00b9f9, #bb0467, #cd0090);
         background-image: linear-gradient(95deg, #008add, #00b9f9, #bb0467, #cd0090);
         background-size: 100%;
         background-repeat: repeat;
@@ -129,10 +121,14 @@ export default {
     }
 
     .border-gradient {
+        -webkit-transition: 0.4s;
+        -o-transition: 0.4s;
         transition: 0.4s;
         max-width: 250px;
         padding: 1rem;
         position: relative;
+        background: -webkit-gradient(linear, left top, right top, from(#0fabee), to(#cdcdcd));
+        background: -o-linear-gradient(left, #0fabee, #cdcdcd);
         background: linear-gradient(to right, #0fabee, #cdcdcd);
         padding: 2.5px;
     }
@@ -140,6 +136,8 @@ export default {
         max-width: 250px;
         padding: 1rem;
         position: relative;
+        background: -webkit-gradient(linear, left top, right top, from(#0fabee), to(#cdcdcd));
+        background: -o-linear-gradient(left, #0fabee, #cdcdcd);
         background: linear-gradient(to right, #0fabee, #cdcdcd);
         padding: 2.5px;
     }
@@ -148,6 +146,8 @@ export default {
         color: black
     }
     .border-gradient a {
+        -webkit-transition: 0.4s;
+        -o-transition: 0.4s;
         transition: 0.4s;
         color: white;
         padding: 0.5rem 3rem;
@@ -163,38 +163,59 @@ export default {
         right: 0px;
         bottom: 0px;
         left: 0px;
-        transform: translate(-1px,7px);
+        -webkit-transform: translate(-1px,7px);
+            -ms-transform: translate(-1px,7px);
+                transform: translate(-1px,7px);
         z-index: -1;
-        filter: blur(10px);
+        -webkit-filter: blur(10px);
+                filter: blur(10px);
         background: conic-gradient(from 90deg at 40% -57%, #097bb1, #3c60a7, #a32b94, #cb188e);
     }
 
     .floating { 
-        animation-name: floating;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
+        -webkit-animation-name: floating; 
+                animation-name: floating;
+        -webkit-animation-duration: 3s;
+                animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
         margin-left: 30px;
         margin-top: 5px;
     }
     
+    @-webkit-keyframes floating {
+        0% { -webkit-transform: translate(0,  0px); transform: translate(0,  0px); }
+        50%  { -webkit-transform: translate(0, 5px); transform: translate(0, 5px); }
+        100%   { -webkit-transform: translate(0, -0px); transform: translate(0, -0px); }   
+    }
+    
     @keyframes floating {
-        0% { transform: translate(0,  0px); }
-        50%  { transform: translate(0, 5px); }
-        100%   { transform: translate(0, -0px); }   
+        0% { -webkit-transform: translate(0,  0px); transform: translate(0,  0px); }
+        50%  { -webkit-transform: translate(0, 5px); transform: translate(0, 5px); }
+        100%   { -webkit-transform: translate(0, -0px); transform: translate(0, -0px); }   
     }
 
     .floating-font { 
-        animation-name: floating;
-        animation-duration: 6s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
+        -webkit-animation-name: floating; 
+                animation-name: floating;
+        -webkit-animation-duration: 6s;
+                animation-duration: 6s;
+        -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
     }
     .floating-font-variant { 
-        animation-name: floating;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
+        -webkit-animation-name: floating; 
+                animation-name: floating;
+        -webkit-animation-duration: 4s;
+                animation-duration: 4s;
+        -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
     }
 
     @media(max-width:769px) {
