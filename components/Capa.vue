@@ -70,8 +70,8 @@ export default {
         position: absolute;
         opacity: 0.9;
         overflow: auto;
-        -webkit-animation: spin-ffabc5ac 158s infinite linear;
-                animation: spin-ffabc5ac 158s infinite linear;
+        -webkit-animation: spin 158s infinite linear;
+                animation: spin 158s infinite linear;
         right: 11rem;
         width: 740px;
         overflow: hidden;

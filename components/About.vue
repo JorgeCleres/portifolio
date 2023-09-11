@@ -35,8 +35,8 @@ h2 {
         position: absolute;
         width: 29rem;
         opacity: 0.9;
-        -webkit-animation: spin-ffabc5ac 228s infinite linear;
-                animation: spin-ffabc5ac 228s infinite linear;
+        -webkit-animation: spin 228s infinite linear;
+                animation: spin 228s infinite linear;
         left: 8vw;
     }
 
