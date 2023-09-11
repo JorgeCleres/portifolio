@@ -1,6 +1,6 @@
 <template>
   <div id="home" class="capa fundo-color x2xl:px-60 xl:px-20 lg-10 sm:px-0 sm:px-0">
-    <div class="orbita">
+    <div class="orbita animate-spin">
         <Satelite 
             size = '4rem'
             top = '0px'
@@ -70,8 +70,8 @@ export default {
         position: absolute;
         opacity: 0.9;
         overflow: auto;
-        -webkit-animation: spin-ffabc5ac 118s infinite linear;
-                animation: spin-ffabc5ac 118s infinite linear;
+        -webkit-animation: spin-ffabc5ac 158s infinite linear;
+                animation: spin-ffabc5ac 158s infinite linear;
         right: 11rem;
         width: 740px;
         overflow: hidden;
@@ -86,26 +86,13 @@ export default {
         width: 99vw;
         opacity: 0.8;
     }
-    @-webkit-keyframes spin {
-        100% {
-            -webkit-transform: rotate(360deg);
-        }
-    }
+
     @keyframes spin {
-        100% {
-            -webkit-transform: rotate(360deg);
+        from {
+            transform: rotate(0deg);
+        }
+        to {
             transform: rotate(360deg);
-        }
-    }
-    @-webkit-keyframes teste {
-        100% {
-            -webkit-transform: rotate3d(360deg);
-        }
-    }
-    @keyframes teste {
-        100% {
-            -webkit-transform: rotate3d(360deg);
-            transform: rotate3d(360deg);
         }
     }
 

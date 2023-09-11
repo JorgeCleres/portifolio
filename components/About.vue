@@ -1,6 +1,6 @@
 <template>
   <div id="about" class="about fundo-color 2xl:px-60 xl:px-20 lg-10 sm:px-10">
-    <img src="../static/lua2.png" alt="">
+    <img class="animate-spin" src="../static/lua2.png" alt="">
     <h2 class="text-center mb-10">ABOUT ME</h2>
     <div class="box rounded-2xl mx-auto py-3 px-10">
         <h4 class="text-center gradient-text">Hello everyone!</h4>
@@ -39,15 +39,13 @@ h2 {
                 animation: spin-ffabc5ac 228s infinite linear;
         left: 8vw;
     }
-    @-webkit-keyframes spin {
-        100% {
-            -webkit-transform: rotate(-360deg);
-        }
-    }
+
     @keyframes spin {
-        100% {
-            -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
         }
     }
 
