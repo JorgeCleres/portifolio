@@ -1,5 +1,6 @@
 <template>
   <div class="fundo-color carousel">
+    <h4 @click="next()">V</h4>
     <div class="inner" ref="inner" :style="innerStyles">
       <div class="card" v-for="img in images" :key="img">
         <img :src="require(`@/static/minsites/${img}`)" alt="" @click="modal(img)" v-b-modal.modal-scrollable />
@@ -81,6 +82,18 @@ img {
   transition: 0.4s;
 }
 
+h4 {
+  position: absolute;
+  left: 5%;
+  top: 42%;
+  font-size: 45px;
+  color: #ffffff;
+  transform: rotate(90deg);
+  z-index: 10000;
+  font-weight: normal;
+  cursor: pointer;
+}
+
 .imageModal {
   width: 100%;
   height: auto;
@@ -126,6 +139,10 @@ img {
   }
   .card {
     width: 40vw;
+  }
+  h4 {
+    font-size: 38px;
+    left: 8%;
   }
 }
 @media (max-width: 480px) {

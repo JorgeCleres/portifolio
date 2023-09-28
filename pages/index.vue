@@ -11,6 +11,7 @@
         'ludmila.jpg',
         'bellebiscoitos.jpg',
         'whatsboot.jpg',
+        'greentiger.png',
         'esatto.jpg',
         'agrievo.jpg',
         'sina.jpg',
@@ -19,11 +20,12 @@
         'amoscabranca.jpg',
         'agendax.jpg',
         'inossolution.jpg',
-        'advogacia.jpg'
+        'advogacia.jpg',
       ]"
     />
     <Carrousel speed="5500" 
       :images="[
+        'seven.png',
         'jorgegi.jpg',
         'pablo.jpg',
         'rcleres.jpg',
