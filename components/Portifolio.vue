@@ -1,10 +1,10 @@
 <template>
-  <div id="portfolio" class="about fundo-color xl:px-20 lg-10 sm:px-10">
+  <div id="portfolio" class="about fundo-color 2xl:px-60 lg-10 sm:px-10">
     <h5 class="m-0 px-10">Portfolio</h5>
     <h2 class="m-0 px-10 pb-6">Sites</h2>
   </div>
 </template>
-    
+
 <script>
 import LineVertical from "@/components/elements/LineVertical.vue";
 
@@ -13,7 +13,7 @@ export default {
   components: { LineVertical},
 };
 </script>
-    
+
 <style scoped>
   h2 {
     color: white;

@@ -4,7 +4,7 @@
     <About />
     <Experiencia />
     <Portifolio />
-    <Carrousel speed="5000" 
+    <Carrousel speed="5000"
       :images="[
         'vadela.jpg',
         'skill.jpg',
@@ -23,7 +23,7 @@
         'advogacia.jpg',
       ]"
     />
-    <Carrousel speed="5500" 
+    <Carrousel speed="5500"
       :images="[
         'seven.png',
         'jorgegi.jpg',
@@ -46,7 +46,7 @@
     <System />
     <Footer />
   </div>
-  
+
 </template>
 
 <script>
