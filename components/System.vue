@@ -1,65 +1,80 @@
 <template>
-  <div class="system fundo-color 2xl:px-60 xl:px-20 lg-10 sm:px-0">
-    <img id="fundo" src="@/static/buraconegro.gif" alt="" />
-    <h5 class="m-0 px-10">Portfolio</h5>
-    <h2 class="m-0 pb-6 px-10">Systems</h2>
-    <p class="px-10">Here are some of the systems I've worked on or created for my own use.</p>
-    <div class="xl:flex text grid-rows-2 grid-flow-col sm:grid px-10">
-      <div class="box-of-boxes">
-        <div class="box mt-0 p-2" @click="setSystem('maisdoc.jpg')">
-          <h4 class="gradient-text">MaisDoc</h4>
-          <p>This is a project in which I provide programming services. The main idea of the project is to handle high-complexity operations, offering extensive, specific, and detailed document support for certificates issued by various agencies throughout the national territory.</p>
-        </div>
-        <div class="box mt-3 p-2" @click="setSystem('cardapio.jpg')">
-          <h4 class="gradient-text">Menu</h4>
-          <p>I created this menu to assist my wife with the sale of vegan products. It's essentially a menu that showcases all the products and provides the option to make a purchase.</p>
-          <span>Vue</span>
-          <span>Node</span>
-          <span>MongoBd</span>
-          <span>Figma</span>
-        </div>
-        <div class="box mt-3 p-2" @click="setSystem('whatsapi.jpg')">
-          <h4 class="gradient-text">API creator</h4>
-          <p>I developed this API builder to make API styling easy and dynamic.</p>
-          <span>Vue</span>
-          <span>Figma</span>
-        </div>
-      </div>
-      <div class="box-image">
-        <div class="image-system mt-0">
-          <img :src="require(`@/static/${image}`)" alt="">
-        </div>
-      </div>
+    <div class="system fundo-color 2xl:px-60 xl:px-20 lg-10 sm:px-0">
+        <img id="fundo" src="@/static/buraconegro.gif" alt="" />
+        <h5 class="m-0 px-10">Portfolio</h5>
+        <h2 class="m-0 pb-6 px-10">Systems</h2>
+        <p class="px-10">
+            Here are some of the systems I've worked on or created for my own
+            use.
+        </p>
+        <section id="services" class="services">
+            <div class="services__cols">
+                <div
+                    v-for="item in items"
+                    :key="item.link"
+                    class="services__card floating"
+                    ontouchstart="this.classList.toggle('hover');">
+
+                    <div class="conjunto">
+                        <div class="front">
+                            <div class="inner">
+                                <img
+                                    :src="require(`@/static/${item.link}.jpg`)"
+                                    :alt="item.link"
+                                />
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="inner">
+                                <h3>{{ item.title }}</h3>
+                                <p>{{ item.text }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-  </div>
 </template>
-      
-  <script>
+
+<script>
 import LineVertical from "@/components/elements/LineVertical.vue";
+import axios from "axios";
 
 export default {
-  name: "System",
-  components: { LineVertical },
-  data() {
-    return {
-      image: 'maisdoc.jpg'
-    }
-  },
-  methods: {
-    setSystem(img) {
-      this.image = img
-    }
-  }
+    name: "System",
+    components: { LineVertical },
+    data() {
+        return {
+            image: "maisdoc.jpg",
+            items: [],
+        };
+    },
+    created() {
+        axios
+            .get("/servicos.json")
+            .then((response) => {
+                this.items = response.data;
+            })
+            .catch((error) => {
+                console.error("Error loading JSON:", error);
+            });
+    },
+    methods: {
+        setSystem(img) {
+            this.image = img;
+        },
+    },
 };
 </script>
-      
-  <style scoped>
+
+<style scoped>
 .system {
-  min-height: 37vw;
+    min-height: 37vw;
 }
 
 .image-system {
-  min-height: 21vw;
+    min-height: 21vw;
 }
 
 .image-system img {
@@ -71,52 +86,45 @@ export default {
     margin: 0px 20px 0;
 }
 #fundo {
-  top: 187rem;
-  position: absolute;
-  width: 107rem;
-  opacity: 0.6;
-  right: 25vw;
-  transform: rotate(-9deg);
+    top: 187rem;
+    position: absolute;
+    width: 107rem;
+    opacity: 0.6;
+    right: 25vw;
+    transform: rotate(-9deg);
 }
 
 p {
-  width: 37%;
-  color: #cfcfcf;
-  font-size: 20px;
-  position: relative;
-  margin-bottom: 10px;
-}
-.box p {
-  width: 100%;
+    width: 37%;
+    color: #cfcfcf;
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 10px;
 }
 
 @-moz-keyframes spin {
-  100% {
-    -moz-transform: rotate(360deg);
-  }
+    100% {
+        -moz-transform: rotate(360deg);
+    }
 }
 @-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(-360deg);
-  }
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
 }
 @keyframes spin {
-  100% {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
-  }
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
 }
 .text h4 {
-  color: rgb(243, 243, 243);
-}
-
-.box-of-boxes {
-  width: 100%;
+    color: rgb(243, 243, 243);
 }
 
 .text p {
-  font-size: 17px;
-  color: rgb(243, 243, 243);
+    font-size: 17px;
+    color: rgb(243, 243, 243);
 }
 
 span {
@@ -126,92 +134,226 @@ span {
     margin: 0 5px;
 }
 h2 {
-  color: rgb(243, 243, 243);
-  font-size: 4rem;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
-    Noto Sans, sans-serif;
-  font-weight: 500;
-  position: relative;
+    color: rgb(243, 243, 243);
+    font-size: 4rem;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+        Noto Sans, sans-serif;
+    font-weight: 500;
+    position: relative;
 }
 
 h5 {
-  color: rgb(243, 243, 243);
-  font-size: 1.4rem;
-  font-weight: 300;
-  position: relative;
+    color: rgb(243, 243, 243);
+    font-size: 1.4rem;
+    font-weight: 300;
+    position: relative;
 }
 
-.box {
-  background: rgb(0 0 0 / 66%);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(8.3px);
-  -webkit-backdrop-filter: blur(8.3px);
-  border: 1px solid rgb(237 237 237 / 30%);
-  transition: 0.8s;
-  cursor: pointer;
-}
-.box:hover {
-  background: rgb(0 0 0 / 90%);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
-  border: 1px solid rgb(237 237 237 / 30%);
-}
-
-.gradient-text {
-    color: #a5a5a5 !important;
-}
-
-    @media(max-width:1280px){
-      .image-system img {
-          margin: 0;
-      }
-      .box-image {
+@media (max-width: 1280px) {
+    .image-system img {
+        margin: 0;
+    }
+    .box-image {
         margin: -6vw 0;
-      }
     }
+}
 
-    @media(max-width:1200px) {
-      p {
-          width: 100%;
-      }
-      .box-image {
+@media (max-width: 1200px) {
+    p {
+        width: 100%;
+    }
+    .box-image {
         margin: 1rem 0;
-      }
     }
+}
 
-    @media(max-width: 768px) {
-      #fundo {
+@media (max-width: 768px) {
+    #fundo {
         top: 225rem;
         width: 46rem;
         right: 12vw;
         transform: rotate(-9deg);
-      }
-      .image-system img {
-        width: 100%;
-      }
     }
+    .image-system img {
+        width: 100%;
+    }
+}
 
-    @media(max-width:480px) {
-      h2 {
+@media (max-width: 480px) {
+    h2 {
         font-size: 2.5rem;
-      }
-      p {
+    }
+    p {
         width: 100%;
         font-size: 19px;
-      }
-      .px-10 {
+    }
+    .px-10 {
         padding-left: 1rem;
         padding-right: 1rem;
-      }
-      .text p {
+    }
+    .text p {
         font-size: 16px;
-      }
-      .text h4 {
+    }
+    .text h4 {
         color: rgb(243, 243, 243);
         font-size: 19px;
-      }
     }
+}
 
-
-
+.services {
+    margin-top: 280px;
+}
+.services__cols {
+    margin-top: -270px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.services__card {
+    width: calc(50% - 2rem);
+    cursor: pointer;
+}
+.services__card .back p {
+    font-size: 19px;
+    width: 100%;
+}
+.services__card .back h3 {
+    color: white;
+    font-size: 23px;
+}
+.services .conjunto {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+.services .front,
+.services .back {
+    background-size: cover;
+    border-radius: 10px;
+    background-position: center;
+    -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1),
+        -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-align: center;
+    min-height: 280px;
+    height: auto;
+    border-radius: 10px;
+    color: #fff;
+}
+.services .back {
+    background: #1d1d1d;
+}
+.services .front {
+    background: linear-gradient(
+        to top,
+        var(--cor-principal-bold),
+        var(--cor-principal)
+    );
+}
+.services .front img {
+    margin-bottom: 20px;
+}
+.services .front:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: "";
+    display: block;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+.services .conjunto:hover .front,
+.services .conjunto:hover .back {
+    -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1),
+        -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.services .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.services .inner {
+    -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 1px solid transparent;
+    -webkit-perspective: inherit;
+    perspective: inherit;
+    z-index: 2;
+}
+.services .conjunto .back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    height: 330px;
+}
+.services .conjunto .front {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    height: 350px;
+}
+.services .conjunto:hover .back {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.services .conjunto:hover .front {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.services .front .inner p {
+    font-size: clamp(1rem, 1.4vw, 2rem);
+    margin-bottom: 2rem;
+    position: relative;
+    font-family: Ubuntu-regular;
+}
+.services .front .inner p:after {
+    content: "";
+    width: 4rem;
+    height: 2px;
+    position: absolute;
+    background: #c6d4df;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -0.75rem;
+}
+.services .front .inner span {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Ubuntu-regular;
+    font-weight: 300;
+}
 </style>

@@ -6,40 +6,40 @@
     <Portifolio />
     <Carrousel speed="5000"
       :images="[
-        'vadela.jpg',
-        'skill.jpg',
-        'ludmila.jpg',
-        'bellebiscoitos.jpg',
-        'whatsboot.jpg',
-        'greentiger.png',
-        'esatto.jpg',
-        'agrievo.jpg',
-        'sina.jpg',
-        'lppinho.jpg',
-        'ternosivan.jpg',
-        'amoscabranca.jpg',
-        'agendax.jpg',
-        'inossolution.jpg',
-        'advogacia.jpg',
+        'vadela',
+        'skill',
+        'ludmila',
+        'bellebiscoitos',
+        'whatsboot',
+        'greentiger',
+        'esatto',
+        'agrievo',
+        'sina',
+        'lppinho',
+        'ternosivan',
+        'amoscabranca',
+        'agendax',
+        'inossolution',
+        'advogacia',
       ]"
     />
     <Carrousel speed="5500"
       :images="[
-        'seven.png',
-        'jorgegi.jpg',
-        'pablo.jpg',
-        'rcleres.jpg',
-        'parletre.jpg',
-        'zamirgabi.jpg',
-        'lp.jpg',
-        'bcprim.jpg',
-        'artistic.jpg',
-        'plusom.jpg',
-        'krkids.jpg',
-        'jbr.jpg',
-        'odontopinho.jpg',
-        'union.jpg',
-        'empiric.jpg',
+        'seven',
+        'jorgegi',
+        'pablo',
+        'rcleres',
+        'parletre',
+        'zamirgabi',
+        'lp',
+        'bcprim',
+        'artistic',
+        'plusom',
+        'krkids',
+        'jbr',
+        'odontopinho',
+        'union',
+        'empiric',
       ]"
     />
     <Logos />
@@ -78,5 +78,27 @@ export default {
   .modal-footer {
     display: none;
   }
+
+  .floating {
+        animation-name: floating;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        margin-left: 30px;
+        margin-top: 5px;
+    }
+
+    @keyframes floating {
+        0% { transform: translate(0,  0px); }
+        50%  { transform: translate(0, 5px); }
+        100%   { transform: translate(0, -0px); }
+    }
+
+    .floating-variant {
+        animation-name: floating;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
 
 </style>

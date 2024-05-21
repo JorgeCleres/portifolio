@@ -16,7 +16,7 @@
         <VueSlickCarousel class="carrousel" v-bind="settings">
             <div class="card" v-for="img in images" :key="img">
                 <img
-                    :src="require(`@/static/minsites/${img}`)"
+                    :src="`https://jrgcleres.s3.sa-east-1.amazonaws.com/minsites/${img}.jpg`"
                     alt=""
                     @click="modal(img)"
                     v-b-modal.modal-scrollable
@@ -83,48 +83,8 @@ export default {
     methods: {
         modal(img) {
             this.modalShow = !this.modalShow;
-            this.page = require(`@/static/sites/${img}`);
+            this.page = `https://jrgcleres.s3.sa-east-1.amazonaws.com/sites/${img}.jpg`
         },
-        // next() {
-        //     this.transitioning = true;
-        //     this.moveLeft();
-        //     this.afterTransition(() => {
-        //         const image = this.images.shift();
-        //         this.images.push(image);
-        //         this.resetTranslate();
-        //     });
-        // },
-        // moveLeft() {
-        //     this.innerStyles = {
-        //         transform: `translateX(-${this.step})
-        //               translateX(-${this.step})`,
-        //     };
-        // },
-        // setStep() {
-        //     const innerWidth = this.$refs.inner.scrollWidth;
-        //     const totalCards = 14;
-        //     this.step = `${innerWidth / totalCards}px`;
-        // },
-        // resetTranslate() {
-        //     this.innerStyles = {
-        //         transition: "none",
-        //         transform: `translateX(-${this.step})`,
-        //     };
-        // },
-        // afterTransition(callback) {
-        //     const listener = () => {
-        //         callback();
-        //         this.$refs.inner.removeEventListener("transitionend", listener);
-        //     };
-        //     this.$refs.inner.addEventListener("transitionend", listener);
-        // },
-    },
-    mounted() {
-        // this.setStep();
-        // this.resetTranslate();
-        // setInterval(() => {
-        //     this.next();
-        // }, this.speed);
     },
 };
 </script>

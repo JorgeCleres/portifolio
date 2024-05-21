@@ -1,7 +1,7 @@
 <template>
   <div id="home" class="capa fundo-color x2xl:px-60 xl:px-20 lg-10 sm:px-0 sm:px-0">
     <div class="orbita animate-spin">
-        <Satelite 
+        <Satelite
             size = '4rem'
             top = '0px'
             right = '1rem'
@@ -11,7 +11,7 @@
             top = '0px'
             right = '35rem'
         />
-        <Astronauta 
+        <Astronauta
             size = '8rem'
             right = '2rem'
             top = '32rem'
@@ -29,7 +29,7 @@
       <a class="fundo-color" href="#footer">Get in touch</a>
     </button>
 
-    <LineVertical 
+    <LineVertical
         size = '8rem'
     />
 
@@ -128,7 +128,7 @@ export default {
         background: linear-gradient(to right, #0fabee, #cdcdcd);
         padding: 2.5px;
     }
-    .border-gradient:hover a{ 
+    .border-gradient:hover a{
         background: transparent !important;
         color: black
     }
@@ -159,8 +159,8 @@ export default {
         background: conic-gradient(from 90deg at 40% -57%, #097bb1, #3c60a7, #a32b94, #cb188e);
     }
 
-    .floating { 
-        -webkit-animation-name: floating; 
+    .floating {
+        -webkit-animation-name: floating;
                 animation-name: floating;
         -webkit-animation-duration: 3s;
                 animation-duration: 3s;
@@ -171,21 +171,21 @@ export default {
         margin-left: 30px;
         margin-top: 5px;
     }
-    
+
     @-webkit-keyframes floating {
         0% { -webkit-transform: translate(0,  0px); transform: translate(0,  0px); }
         50%  { -webkit-transform: translate(0, 5px); transform: translate(0, 5px); }
-        100%   { -webkit-transform: translate(0, -0px); transform: translate(0, -0px); }   
+        100%   { -webkit-transform: translate(0, -0px); transform: translate(0, -0px); }
     }
-    
+
     @keyframes floating {
         0% { -webkit-transform: translate(0,  0px); transform: translate(0,  0px); }
         50%  { -webkit-transform: translate(0, 5px); transform: translate(0, 5px); }
-        100%   { -webkit-transform: translate(0, -0px); transform: translate(0, -0px); }   
+        100%   { -webkit-transform: translate(0, -0px); transform: translate(0, -0px); }
     }
 
-    .floating-font { 
-        -webkit-animation-name: floating; 
+    .floating-font {
+        -webkit-animation-name: floating;
                 animation-name: floating;
         -webkit-animation-duration: 6s;
                 animation-duration: 6s;
@@ -194,8 +194,8 @@ export default {
         -webkit-animation-timing-function: ease-in-out;
                 animation-timing-function: ease-in-out;
     }
-    .floating-font-variant { 
-        -webkit-animation-name: floating; 
+    .floating-font-variant {
+        -webkit-animation-name: floating;
                 animation-name: floating;
         -webkit-animation-duration: 4s;
                 animation-duration: 4s;

@@ -59,7 +59,7 @@
                     <span class="text-center inline-block align-middle">Node</span>
                 </div>
             </div>
-            
+
             <div class="floating-variant skill-box flex justify-evenly flex-row px-2 py-4 mx-1 my-2">
                 <div class="w-1/2">
                     <img src="@/static/mongodb.png" alt="">
@@ -129,7 +129,7 @@
     <LineVertical size="11rem" />
   </div>
 </template>
-  
+
   <script>
 import LineVertical from "@/components/elements/LineVertical.vue";
 
@@ -138,7 +138,7 @@ export default {
   components: { LineVertical },
 };
 </script>
-  
+
 <style scoped>
 
     h2 {
@@ -184,28 +184,6 @@ export default {
     .skill-box:hover {
         border: 1px solid grey;
         border-radius: 10px
-    }
-
-    .floating { 
-        animation-name: floating;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-        margin-left: 30px;
-        margin-top: 5px;
-    }
-    
-    @keyframes floating {
-        0% { transform: translate(0,  0px); }
-        50%  { transform: translate(0, 5px); }
-        100%   { transform: translate(0, -0px); }   
-    }
-
-    .floating-variant { 
-        animation-name: floating;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
     }
 
     @media(max-width:769px) {
