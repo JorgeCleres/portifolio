@@ -1,20 +1,17 @@
 <template>
     <div class="system fundo-color 2xl:px-60 xl:px-20 lg-10 sm:px-0">
         <img id="fundo" src="@/static/buraconegro.gif" alt="" />
-        <h5 class="m-0 px-10">Portfolio</h5>
-        <h2 class="m-0 pb-6 px-10">Systems</h2>
-        <p class="px-10">
-            Here are some of the systems I've worked on or created for my own
-            use.
-        </p>
+        <h5 class="m-0 px-10">{{ $t("portfolio") }}</h5>
+        <h2 class="m-0 pb-6 px-10">{{ $t("system") }}</h2>
+        <p class="px-10">{{ $t("system-subtitle") }}</p>
         <section id="services" class="services">
             <div class="services__cols">
                 <div
                     v-for="item in items"
                     :key="item.link"
                     class="services__card floating"
-                    ontouchstart="this.classList.toggle('hover');">
-
+                    ontouchstart="this.classList.toggle('hover');"
+                >
                     <div class="conjunto">
                         <div class="front">
                             <div class="inner">
@@ -50,19 +47,29 @@ export default {
             items: [],
         };
     },
+    watch: {
+        '$i18n.locale': function () {
+            this.setTextoSistemas()
+        },
+    },
     created() {
-        axios
-            .get("/servicos.json")
-            .then((response) => {
-                this.items = response.data;
-            })
-            .catch((error) => {
-                console.error("Error loading JSON:", error);
-            });
+        this.setTextoSistemas()
     },
     methods: {
         setSystem(img) {
             this.image = img;
+        },
+        setTextoSistemas() {
+            const caminho =
+                this.$i18n.locale == "pt" ? "/servicosPt.json" : "/servicosEn.json";
+                axios
+                    .get(caminho)
+                    .then((response) => {
+                        this.items = response.data;
+                    })
+                    .catch((error) => {
+                        console.error("Error loading JSON:", error);
+                    });
         },
     },
 };
@@ -100,6 +107,10 @@ p {
     font-size: 20px;
     position: relative;
     margin-bottom: 10px;
+}
+
+.floating {
+    margin: 0 0 10px !important;
 }
 
 @-moz-keyframes spin {
@@ -237,12 +248,12 @@ h5 {
     background-size: cover;
     border-radius: 10px;
     background-position: center;
-    -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    -o-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1),
-        -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -webkit-transition: -webkit-transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1),
+        -webkit-transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     text-align: center;
@@ -279,12 +290,12 @@ h5 {
 }
 .services .conjunto:hover .front,
 .services .conjunto:hover .back {
-    -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    -o-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1),
-        -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -webkit-transition: -webkit-transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: -webkit-transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+    -o-transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1),
+        -webkit-transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 .services .back {
     position: absolute;

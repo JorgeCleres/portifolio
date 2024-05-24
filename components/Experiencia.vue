@@ -2,14 +2,12 @@
   <div id="experience" class="experiencia fundo-color 2xl:px-60 xl:px-20 lg-10 sm:px-0">
     <div class="grid xl:grid-cols-2 lg:grid-cols-2 sm:grid-cols-1">
         <div class="exp-text px-10">
-            <h2 class="mb-2">
-                MY EXPERIENCE
-            </h2>
+            <h2 class="mb-2">{{ $t('exp') }}</h2>
             <div class="box pr-4 py-2">
-                <p>My journey in the field of Information Technology began during my course in Analysis and Systems Development at FAPI, where I acquired a solid foundation to build my career.</p>
-                <p>My first job in this field was focused on software testing, which provided me with valuable experience in ensuring the quality of programs and online campaign websites.</p>
-                <p>However, my true passion has always been development. I decided to make the switch and fully immerse myself in the development field, working in both Front-end and Back-end roles. Currently, I am involved in a project that I have been a part of since day one, and I take great pride in that. It's incredible to be part of this process from the very beginning.</p>
-                <p>On the side, you'll find some of the technical skills I've acquired along the way, both through professional practice and personal projects. I'm eager to continue growing and making further contributions in the world of software development.</p>
+                <p>{{ $t('exp-text') }}</p>
+                <p>{{ $t('exp-text-1') }}</p>
+                <p>{{ $t('exp-text-2') }}</p>
+                <p>{{ $t('exp-text-3') }}</p>
             </div>
         </div>
 

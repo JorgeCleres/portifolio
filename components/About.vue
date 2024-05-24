@@ -1,13 +1,13 @@
 <template>
   <div id="about" class="about fundo-color 2xl:px-60 xl:px-20 lg-10 sm:px-10">
     <img class="animate-spin" src="../static/lua2.png" alt="">
-    <h2 class="text-center mb-10">ABOUT ME</h2>
+    <h2 class="text-center mb-10">{{ $t('about-title') }}</h2>
     <div class="box rounded-2xl mx-auto py-3 px-10">
-        <h4 class="text-center gradient-text">Hello everyone!</h4>
-        <p class="text-center">My passion for technology led me into the world of programming. Learning to code was initially challenging, but with a lot of persistence, discipline, and determination, I tackled this challenge head-on. It has been several years of study (and I am still studying), and over this time, I have accumulated a lot of experience in the field of development. I have had the opportunity to create various websites, systems, and even logo designs and Instagram posts.</p>
-        <p class="text-center">My main goal is to continue learning and deepening my knowledge in this vast universe of programming. I am constantly exploring new languages, frameworks, architectures, and cloud technologies. The journey is still long, but I face it with a lot of enthusiasm because I have chosen the profession I love.</p>
+        <h4 class="text-center gradient-text">{{ $t('about-subtitle') }}</h4>
+        <p class="text-center">{{ $t('about-text') }}</p>
+        <p class="text-center">{{ $t('about-text2') }}</p>
     </div>
-    <LineVertical 
+    <LineVertical
         size = '11rem'
     />
   </div>

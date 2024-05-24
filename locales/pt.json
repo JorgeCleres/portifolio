@@ -1,0 +1,35 @@
+{
+  "home": "Início",
+  "about": "Sobre",
+  "experience": "Experiência",
+  "port": "Portifólio",
+  "footer": "Contato",
+
+  "capa-1": "Olá",
+  "capa-2": "Eu sou o Jorge",
+  "capa-3": "Desenvolvedor",
+  "capa-4": "Full Stack",
+  "capa-texto": "Este é o meu portfólio, veja alguns dos meus trabalhos",
+  "capa-botao": "Entrar em contato",
+
+  "about-title": "SOBRE MIM",
+  "about-subtitle": "Olá pessoal!",
+  "about-text": "Minha paixão pela tecnologia me levou ao mundo da programação. Aprender a programar foi inicialmente desafiador, mas com muita persistência, disciplina e determinação enfrentei esse desafio de frente. Foram vários anos de estudo (e ainda estou estudando), e ao longo desse tempo acumulei muita experiência na área de desenvolvimento. Tive a oportunidade de criar diversos sites, sistemas e até designs de logotipos e postagens no Instagram.",
+  "about-text2": "Meu principal objetivo é continuar aprendendo e aprofundando meus conhecimentos neste vasto universo da programação. Estou constantemente explorando novas linguagens, frameworks, arquiteturas e tecnologias de nuvem. A jornada ainda é longa, mas encaro-a com muito entusiasmo porque escolhi a profissão que amo.",
+
+  "exp": "MINHA EXPERIÊNCIA",
+  "exp-text": "Minha jornada na área de Tecnologia da Informação começou durante meu curso em Análise e Desenvolvimento de Sistemas na FAPI, onde adquiri uma base sólida para construir minha carreira.",
+  "exp-text-1": "Meu primeiro emprego nessa área foi focado em testes de software, o que me proporcionou uma experiência valiosa em garantir a qualidade de programas e sites de campanhas online.",
+  "exp-text-2": "No entanto, minha verdadeira paixão sempre foi o desenvolvimento. Decidi fazer a transição e me imergir totalmente na área de desenvolvimento, trabalhando tanto em funções de Front-end quanto de Back-end. Atualmente, estou envolvido em um projeto do qual faço parte desde o primeiro dia, e tenho muito orgulho disso. É incrível fazer parte desse processo desde o início.",
+  "exp-text-3": "Ao lado, você encontrará algumas das habilidades técnicas que adquiri ao longo do caminho, tanto através da prática profissional quanto de projetos pessoais. Estou ansioso para continuar crescendo e contribuindo ainda mais no mundo do desenvolvimento de software.",
+
+  "portfolio": "Portifólio",
+  "portfolio-subtitle": "Sites",
+  "logo": "Portifólio",
+  "contato": "Contate-me",
+
+  "system": "Sistemas",
+  "system-subtitle": "Aqui estão alguns dos sistemas em que trabalhei ou criei para meu próprio uso.",
+
+  "button-closed": "Fechar"
+}

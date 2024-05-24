@@ -1,0 +1,26 @@
+[
+  {
+      "link": "cardapio",
+      "title": "Cardápio Belle Biscoitos",
+      "text": "Criei este menu para ajudar minha esposa na venda de produtos veganos. É essencialmente um menu que mostra todos os produtos e oferece a opção de compra",
+      "tags": "Vue, Node, MongoDB, Figma"
+  },
+  {
+      "link": "richhouse",
+      "title": "RickHouse",
+      "text": "RichHouse é um projeto que desenvolvi com o objetivo de organizar e gerenciar as finanças domésticas. Com ele, você pode visualizar e controlar de forma prática os gastos, salários e investimentos.",
+      "tags": "Vue, Node, Mysql, Figma"
+  },
+  {
+      "link": "whatsapi",
+      "title": "API WhatsApp Builder",
+      "text": "Desenvolvi este construtor de API para facilitar e tornar dinâmica a estilização de API",
+      "tags": "Vue, Figma"
+  },
+  {
+      "link": "maisdoc",
+      "title": "MaisDoc",
+      "text": "Este é um projeto no qual ofereço serviços de programação. A ideia principal do projeto é lidar com operações de alta complexidade, oferecendo amplo suporte documental específico e detalhado para certificados emitidos por diversos órgãos em todo o território nacional.",
+      "tags": "PHP, JS, Mysql"
+  }
+]

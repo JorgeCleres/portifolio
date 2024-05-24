@@ -1,0 +1,35 @@
+{
+  "home": "Home",
+  "about": "About",
+  "experience": "Experience",
+  "port": "Portfolio",
+  "footer": "Contact",
+
+  "capa-1": "Hello",
+  "capa-2": "I am Jorge",
+  "capa-3": "Developer",
+  "capa-4": "Full Stack",
+  "capa-texto": "This is my portfolio, see some of my work",
+  "capa-botao": "Get in touch",
+
+  "about-title": "ABOUT ME",
+  "about-subtitle": "Hello everyone!",
+  "about-text": "My passion for technology led me into the world of programming. Learning to code was initially challenging, but with a lot of persistence, discipline, and determination, I tackled this challenge head-on. It has been several years of study (and I am still studying), and over this time, I have accumulated a lot of experience in the field of development. I have had the opportunity to create various websites, systems, and even logo designs and Instagram posts.",
+  "about-text2": "My main goal is to continue learning and deepening my knowledge in this vast universe of programming. I am constantly exploring new languages, frameworks, architectures, and cloud technologies. The journey is still long, but I face it with a lot of enthusiasm because I have chosen the profession I love.",
+
+  "exp": "MY EXPERIENCE",
+  "exp-text": "My journey in the field of Information Technology began during my course in Analysis and Systems Development at FAPI, where I acquired a solid foundation to build my career",
+  "exp-text-1": "My first job in this field was focused on software testing, which provided me with valuable experience in ensuring the quality of programs and online campaign websites.",
+  "exp-text-2": "However, my true passion has always been development. I decided to make the switch and fully immerse myself in the development field, working in both Front-end and Back-end roles. Currently, I am involved in a project that I have been a part of since day one, and I take great pride in that. It's incredible to be part of this process from the very beginning.",
+  "exp-text-3": "On the side, you'll find some of the technical skills I've acquired along the way, both through professional practice and personal projects. I'm eager to continue growing and making further contributions in the world of software development.",
+
+  "portfolio": "Portfolio",
+  "portfolio-subtitle": "Websites",
+  "logo": "Portfolio",
+  "contato": "Contact me",
+
+  "button-closed": "Closed",
+
+  "system": "Systems",
+  "system-subtitle": "Here are some of the systems I've worked on or created for my own use."
+}

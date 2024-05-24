@@ -1,7 +1,7 @@
 <template>
   <div id="portfolio" class="about fundo-color 2xl:px-60 lg-10 sm:px-10">
-    <h5 class="m-0 px-10">Portfolio</h5>
-    <h2 class="m-0 px-10 pb-6">Sites</h2>
+    <h5 class="m-0 px-10">{{ $t('portfolio') }}</h5>
+    <h2 class="m-0 px-10 pb-6">{{ $t('portfolio-subtitle') }}</h2>
   </div>
 </template>
 

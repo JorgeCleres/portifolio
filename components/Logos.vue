@@ -1,6 +1,6 @@
 <template>
   <div class="logos fundo-color xl:px-60 sm:px-10 pb-40">
-    <h5 class="m-0 pt-20 sm:px-10">Portfolio</h5>
+    <h5 class="m-0 pt-20 sm:px-10">{{ $t('logo') }}</h5>
     <h2 class="m-0 sm:px-10">Logos</h2>
     <div class="flex justify-between flex-wrap">
       <img class="floating" src="@/static/logos/ludmila.png" alt="ludmila">
@@ -11,7 +11,7 @@
     </div>
   </div>
 </template>
-    
+
 <script>
 import LineVertical from "@/components/elements/LineVertical.vue";
 
@@ -20,7 +20,7 @@ export default {
   components: { LineVertical },
 };
 </script>
-    
+
 <style scoped>
   h2 {
     color: white;
@@ -49,7 +49,7 @@ export default {
   img:hover {
     filter: grayscale(0);
   }
-  .floating { 
+  .floating {
         animation-name: floating;
         animation-duration: 3s;
         animation-iteration-count: infinite;
@@ -57,14 +57,14 @@ export default {
         margin-left: 30px;
         margin-top: 5px;
     }
-    
+
     @keyframes floating {
         0% { transform: translate(0,  0px); }
         50%  { transform: translate(0, 5px); }
-        100%   { transform: translate(0, -0px); }   
+        100%   { transform: translate(0, -0px); }
     }
 
-    .floating-variant { 
+    .floating-variant {
         animation-name: floating;
         animation-duration: 4s;
         animation-iteration-count: infinite;

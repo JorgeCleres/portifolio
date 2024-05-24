@@ -8,9 +8,8 @@
                 :src="page"
                 :alt="this.page"
             />
-            <b-button class="mt-3" block @click="$bvModal.hide('modal-xl')"
-                >Fechar</b-button
-            >
+
+            <b-button class="mt-3" block @click="$bvModal.hide('modal-xl')">{{ $t('button-closed') }}</b-button>
         </b-modal>
 
         <VueSlickCarousel class="carrousel" v-bind="settings">

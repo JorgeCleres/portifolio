@@ -1,7 +1,7 @@
 <template>
   <div id="footer" class="footer fundo-color 2xl:px-60 xl:px-20 lg-10 sm:px-0 pt-20">
     <div class="box sm:p-10 sm:m-10">
-    <h2 class="text-center mb-20 p-0">Contact me</h2>
+    <h2 class="text-center mb-20 p-0">{{ $t('contato') }}</h2>
       <div class="flex justify-between">
       <a href="https://www.instagram.com/jorge.cleres/">
         <img class="floating" src="@/static/logos/instagram.png" alt="instagram">
@@ -22,13 +22,13 @@
     </div>
   </div>
 </template>
-  
+
   <script>
 export default {
   name: "Footer",
 };
 </script>
-  
+
   <style scoped>
 .footer {
   background-image: url(/_nuxt/static/sun-7.gif);

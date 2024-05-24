@@ -11,12 +11,14 @@
                 <b-collapse id="nav-collapse" is-nav>
                     <!-- Right aligned nav items -->
                     <b-navbar-nav class="ml-auto">
-                        <b-nav-item href="#home">Home</b-nav-item>
-                        <b-nav-item href="#about">About</b-nav-item>
-                        <b-nav-item href="#experience">Experience</b-nav-item>
-                        <b-nav-item href="#portfolio">Portfolio</b-nav-item>
-                        <b-nav-item href="#footer">Contact</b-nav-item>
+                        <b-nav-item href="#home">{{ $t('home') }}</b-nav-item>
+                        <b-nav-item href="#about">{{ $t('about') }}</b-nav-item>
+                        <b-nav-item href="#experience">{{ $t('experience') }}</b-nav-item>
+                        <b-nav-item href="#portfolio">{{ $t('port') }}</b-nav-item>
+                        <b-nav-item href="#footer">{{ $t('footer') }}</b-nav-item>
                     </b-navbar-nav>
+
+                    <language-switcher />
                 </b-collapse>
             </b-navbar>
         </div>
@@ -26,7 +28,9 @@
 </template>
 
   <script>
+import LanguageSwitcher from '~/components/elements/LanguageSwitcher.vue';
 export default {
+    components: { LanguageSwitcher },
     name: "",
     data() {
         return {};

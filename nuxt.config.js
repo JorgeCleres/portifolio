@@ -23,8 +23,21 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '@/plugins/bootstrapvue.js'
+    '@/plugins/bootstrapvue.js',
+    '~/plugins/i18n.js'
   ],
+
+  i18n: {
+    locales: ['en', 'pt'],
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en',
+      messages: {
+        en: require('./locales/en.json'),
+        pt: require('./locales/pt.json')
+      }
+    }
+  },
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
