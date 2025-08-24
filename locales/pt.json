@@ -14,14 +14,16 @@
 
   "about-title": "SOBRE MIM",
   "about-subtitle": "Olá pessoal!",
-  "about-text": "Minha paixão pela tecnologia me levou ao mundo da programação. Aprender a programar foi inicialmente desafiador, mas com muita persistência, disciplina e determinação enfrentei esse desafio de frente. Foram vários anos de estudo (e ainda estou estudando), e ao longo desse tempo acumulei muita experiência na área de desenvolvimento. Tive a oportunidade de criar diversos sites, sistemas e até designs de logotipos e postagens no Instagram.",
-  "about-text2": "Meu principal objetivo é continuar aprendendo e aprofundando meus conhecimentos neste vasto universo da programação. Estou constantemente explorando novas linguagens, frameworks, arquiteturas e tecnologias de nuvem. A jornada ainda é longa, mas encaro-a com muito entusiasmo porque escolhi a profissão que amo.",
+  "about-text": "Sou Tech Lead Full Stack com sólida experiência em desenvolvimento de soluções web robustas e escaláveis. Especialista em Node.js, Vue.js e arquitetura de APIs, atualmente na TOTVS, onde coordeno o desenvolvimento do sistema de Gestão de Oportunidades.",
+  "about-text2": "Minha trajetória começou na área de testes de software, o que me proporcionou uma visão única sobre qualidade e garantiu uma base sólida para minha transição para desenvolvimento. Hoje, atuo em todas as camadas tecnológicas - desde frontend até banco de dados - combinando conhecimento técnico aprofundado com visão estratégica de negócio.",
+  "about-text3": "Apaixonado por tecnologia e inovação, valorizo a transferência de conhecimento e a melhoria contínua. Busco constantemente criar soluções que impactem positivamente usuários e empresas, sempre alinhando desenvolvimento técnico às necessidades reais do mercado.",
 
   "exp": "MINHA EXPERIÊNCIA",
-  "exp-text": "Minha jornada na área de Tecnologia da Informação começou durante meu curso em Análise e Desenvolvimento de Sistemas na FAPI, onde adquiri uma base sólida para construir minha carreira.",
-  "exp-text-1": "Meu primeiro emprego nessa área foi focado em testes de software, o que me proporcionou uma experiência valiosa em garantir a qualidade de programas e sites de campanhas online.",
-  "exp-text-2": "No entanto, minha verdadeira paixão sempre foi o desenvolvimento. Decidi fazer a transição e me imergir totalmente na área de desenvolvimento, trabalhando tanto em funções de Front-end quanto de Back-end. Atualmente, estou envolvido em um projeto do qual faço parte desde o primeiro dia, e tenho muito orgulho disso. É incrível fazer parte desse processo desde o início.",
-  "exp-text-3": "Ao lado, você encontrará algumas das habilidades técnicas que adquiri ao longo do caminho, tanto através da prática profissional quanto de projetos pessoais. Estou ansioso para continuar crescendo e contribuindo ainda mais no mundo do desenvolvimento de software.",
+  "exp-text": "Atuo como Desenvolvedor Full Stack na TOTVS, no sistema de Gestão de Oportunidades. desenvolvimento desde arquitetura até entrega, desenvolvendo APIs REST complexas, interfaces dinâmicas.",
+  "exp-text-1": "Na Esatto Consultants, sou Tech Lead Full Stack coordenando tecnicamente o desenvolvimento da plataforma MaisDOC. Atuo em todas as camadas do sistema, defino arquiteturas e padrões de código.",
+  "exp-text-2": "Tenho experiência sólida em desenvolvimento web personalizado para diversos clientes, utilizando principalmente Vue.js e Node.js. Trabalhei em projetos que envolvem desde prototipagem no Figma até implementação de landing pages otimizadas para conversão, sempre garantindo alta performance e segurança.",
+  "exp-text-3": "Desenvolvi ferramentas internas e soluções digitais em agências, com foco em WordPress, SEO e gerenciamento de projetos digitais. Também possuo experiência em desenvolvimento de interfaces responsivas e integração com APIs.",
+  "exp-text-4": "Iniciei minha carreira como Analista de Testes de Software, onde adquiri sólida base em qualidade de software através de testes manuais e automatizados, análise de requisitos e documentação técnica. Esta experiência me proporcionou uma visão única sobre desenvolvimento, sempre priorizando qualidade e boas práticas.",
 
   "portfolio": "Portifólio",
   "portfolio-subtitle": "Sites",

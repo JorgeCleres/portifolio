@@ -6,6 +6,7 @@
         <h4 class="text-center gradient-text">{{ $t('about-subtitle') }}</h4>
         <p class="text-center">{{ $t('about-text') }}</p>
         <p class="text-center">{{ $t('about-text2') }}</p>
+        <p class="text-center">{{ $t('about-text3') }}</p>
     </div>
     <LineVertical
         size = '11rem'

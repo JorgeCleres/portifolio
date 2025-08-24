@@ -13,9 +13,9 @@
         </b-modal>
 
         <VueSlickCarousel class="carrousel" v-bind="settings">
-            <div class="card" v-for="img in images" :key="img">
+          <div class="card" v-for="img in images" :key="img">
                 <img
-                    :src="`https://jrgcleres.s3.sa-east-1.amazonaws.com/minsites/${img}.jpg`"
+                    :src="`https://minsites.s3.sa-east-1.amazonaws.com/${img}.jpg`"
                     alt=""
                     @click="modal(img)"
                     v-b-modal.modal-scrollable
@@ -82,7 +82,7 @@ export default {
     methods: {
         modal(img) {
             this.modalShow = !this.modalShow;
-            this.page = `https://jrgcleres.s3.sa-east-1.amazonaws.com/sites/${img}.jpg`
+            this.page = `https://sitesjrg.s3.sa-east-1.amazonaws.com/${img}.jpg`
         },
     },
 };

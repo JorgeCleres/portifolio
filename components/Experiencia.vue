@@ -8,6 +8,7 @@
                 <p>{{ $t('exp-text-1') }}</p>
                 <p>{{ $t('exp-text-2') }}</p>
                 <p>{{ $t('exp-text-3') }}</p>
+                <p>{{ $t('exp-text-4') }}</p>
             </div>
         </div>
 

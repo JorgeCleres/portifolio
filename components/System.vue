@@ -226,7 +226,7 @@ h5 {
     justify-content: center;
 }
 .services__card {
-    width: calc(50% - 2rem);
+    width: calc(33% - 2rem);
     cursor: pointer;
 }
 .services__card .back p {
@@ -366,5 +366,23 @@ h5 {
     color: rgba(255, 255, 255, 0.7);
     font-family: Ubuntu-regular;
     font-weight: 300;
+}
+
+@media(max-width:1930px){
+  .services__card {
+    width: calc(50% - 2rem) !important;
+    cursor: pointer;
+  }
+}
+
+@media(max-width:700px){
+  .services__card {
+    width: calc(100% - 2rem) !important;
+    cursor: pointer;
+  }
+
+  .services__card .back p {
+    font-size: 16px;
+  }
 }
 </style>
